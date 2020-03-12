@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import UserInfo from './UserInfo'
 import axios from 'axios';
+import styled from 'styled-components';
+import GeneralInfos from './GeneralInfos';
+import Installments from './Installments';
 
 const responseDataMock = {
     installments: [
@@ -54,6 +57,17 @@ const responseDataMock = {
     totalAmountInTaxes: 500
 }
 
+const Wrapper = styled.div`
+    width: 60%;
+    background-color: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: 100vh;
+`
+
 class Dashboard extends Component {
 
     constructor(props) {
@@ -87,9 +101,19 @@ class Dashboard extends Component {
     render() {
         
         return (
-            <div>
+            <Wrapper>
                 <UserInfo />
-            </div>
+                <GeneralInfos 
+                    userId={this.state.userId}
+                    amountTaken={this.state.amountTaken}
+                    amountPayd={this.state.amountPayd}
+                    monthlyInterest={this.state.monthlyInterest}
+                    totalAmountInTaxes={this.state.totalAmountInTaxes}
+                />
+                <Installments 
+                    installments={this.state.installments}
+                />
+            </Wrapper>
         );
     }
 }
