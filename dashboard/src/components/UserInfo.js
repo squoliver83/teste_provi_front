@@ -11,7 +11,7 @@ const userDataMock = {
 
 const Wrapper = styled.div`
     width: 100%;
-    background-color: #888;
+    /* background-color: #888; */
     display: flex;
     align-items: center;
     align-self: flex-start;

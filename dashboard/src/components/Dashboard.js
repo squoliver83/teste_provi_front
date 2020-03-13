@@ -58,7 +58,7 @@ const responseDataMock = {
 }
 
 const Wrapper = styled.div`
-    width: 60%;
+    width: 100%;
     background-color: #888;
     display: flex;
     flex-direction: column;
