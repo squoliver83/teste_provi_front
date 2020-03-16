@@ -3,7 +3,6 @@ import { Wrapper, ProfileImg, UsernameText, UserLocation, ProfileInfos } from '.
 
 // mock de dados de usuário/estudante
 import profileImg from '../../img/sam_profile_small.jpg';
-
 const userDataMock = {
     name: "Samuel Quaresma",
     city: "São Vicente",

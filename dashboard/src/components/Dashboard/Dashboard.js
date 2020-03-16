@@ -24,7 +24,7 @@ class Dashboard extends Component {
     }
 
     getData = async () => {
-        const queryResponse = await axios.get('http://www.mocky.io/v2/5c923b0932000029056bce39');        
+        const queryResponse = await axios.get('http://www.mocky.io/v2/5c923b0932000029056bce39');
         this.setState({
             userId: queryResponse.data.UserId,
             amountTaken: queryResponse.data.amountTaken.toFixed(2),
@@ -41,7 +41,6 @@ class Dashboard extends Component {
                 <DashboardTitle>PAINEL DO ESTUDANTE</DashboardTitle>
                 <UserInfo />
                 <GeneralInfos
-                    userId={this.state.userId}
                     amountTaken={this.state.amountTaken}
                     amountPayd={this.state.amountPayd}
                     monthlyInterest={this.state.monthlyInterest}
