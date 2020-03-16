@@ -9,7 +9,6 @@ const userDataMock = {
     state: "SP"
 }
 
-
 function UserInfo() {
     return (
         <Wrapper>
