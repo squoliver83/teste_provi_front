@@ -14,7 +14,6 @@ display: grid;
 grid-auto-flow: column;
 grid-auto-columns: 1fr;
 grid-gap: 20px;
-/* padding: 0 20px; */
 text-align: center;
 @media screen AND (max-width: 500px) {
     display: flex;
@@ -22,6 +21,7 @@ text-align: center;
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 `
 
